@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#bg-Img{
+  background-image: url("../public/bgImg.png");
+  width: 100%;
+  
+  object-fit: cover;
+  background-size: cover;
+}
