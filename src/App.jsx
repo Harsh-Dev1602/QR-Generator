@@ -27,8 +27,8 @@ useEffect(() => {
      {loading ? (
         <Loading/>
       ) :(
-        <div className="w-full h-screen bg-[#FFF8DB] flex justify-center items-center" id="bg-Img">
-        <div className="w-[90%]  sm:w-[450px] h-auto shadow-md shadow-[#cccc] py-[50px] px-[15px] rounded-md bg-sky-400 space-y-4 ">
+        <div style={{ minHeight: "100vh" }} className="w-full h-screen bg-[#FFF8DB] flex justify-center items-center" id="bg-Img">
+        <div style={{ maxHeight: "100vh" }} className="w-[90%]  sm:w-[450px] h-auto shadow-md shadow-[#cccc] py-[50px] px-[15px] rounded-md bg-sky-400 space-y-4 overflow-y-auto ">
           <h1 className="text-xl  xl:text-2xl text-black  text-center font-bold">Please enter a your text or URL</h1>
 
           <input
