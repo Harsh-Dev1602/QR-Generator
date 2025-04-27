@@ -11,7 +11,7 @@ function App() {
       qrTextEle.value= "";  
     }
     else{
-      alert("Pleas Enter a  your text or URL...")
+      alert("Pleas enter a  your text or URL...")
     }
   }
   const [loading, setLoading] = useState(true);
@@ -28,23 +28,21 @@ useEffect(() => {
         <Loading/>
       ) :(
         <div className="w-full h-screen bg-[#FFF8DB] flex justify-center items-center" id="bg-Img">
-        <div className="w-[450px] h-auto shadow-md shadow-black py-[50px] px-[15px] rounded-xl bg-sky-300 space-y-4 ">
-          <h1 className="text-2xl text-black  text-center font-bold">
-            Please Enter a your Text or URL
-          </h1>
+        <div className="w-[90%]  sm:w-[450px] h-auto shadow-md shadow-[#cccc] py-[50px] px-[15px] rounded-md bg-sky-400 space-y-4 ">
+          <h1 className="text-xl  xl:text-2xl text-black  text-center font-bold">Please enter a your text or URL</h1>
 
           <input
-            className="w-full h-[60px] text-[20px] font-semibold  p-[10px] outline-none shadow-inner bg-white  rounded-md shadow-black "
+            className="w-full h-[60px] text-[20px] font-semibold  p-[10px] outline-none shadow-inner bg-[#ffffffe0]  rounded-md shadow-[#ccc] "
             type="text"
             placeholder="Text or URL"
             id="qrText"
           />
 
-          <div className="w-full h-full ">
-                 <img src="" className="mx-auto w-[60%] p-[1px] rounded-md "  id="imgQR"/>
+          <div className="w-full h-auto ">
+                 <img src="" className="mx-auto w-[80%] p-[1px] rounded-md "  id="imgQR"/>
           </div>
 
-          <button onClick={genQRCode} className="w-full bg-black p-[20px] font-bold text-xl text-white rounded-full hover:text-white  active:bg-[#87A2FF] transition-all">
+          <button onClick={genQRCode} className="w-[80%] mx-[10%] bg-black p-[20px] font-bold text-xl text-white rounded-xl   active:bg-[#696969b2] transition-all duration-100">
             Gen QR Code
           </button>
         </div>

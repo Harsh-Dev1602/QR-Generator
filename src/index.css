@@ -5,7 +5,7 @@
 #bg-Img{
   background-image: url("../public/bgImg.png");
   width: 100%;
-  
+  background-position: center;
   object-fit: cover;
   background-size: cover;
 }

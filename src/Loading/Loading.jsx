@@ -3,8 +3,8 @@ import "../Loading/Loading.css";
 function Loading() {
   return (
     <>
-      <div className="w-full  bg-[#5594d26e] h-screen flex justify-center items-center rounded-[10px]">
-        <div class="loader"></div>
+      <div className="w-full  bg-sky-100 h-screen flex justify-center items-center rounded-[10px]">
+        <div className="loader"></div>
       </div>
     </>
   );
